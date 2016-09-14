@@ -1,9 +1,3 @@
-/*
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	var settings = {
@@ -28,6 +22,15 @@
 	var $window = $(window);
 
 	$window.on('load', function() {
+
+		$(document).ready(function(){
+		    $.get("https://raw.githubusercontent.com/artkostm/test/master/README.md", 
+						function(data)
+						{
+							$("#container_text").html(data.replace(/(\r\n|\n|\r)/gm, "<br>"));
+						}
+					);
+		}); 
 
 		skel
 			.breakpoints({
