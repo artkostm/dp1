@@ -1,22 +1,11 @@
 (function($) {
 
 	var settings = {
-
-		// Speed to resize panel.
 			resizeSpeed: 600,
-
-		// Speed to fade in/out.
 			fadeSpeed: 300,
-
-		// Size factor.
 			sizeFactor: 11.5,
-
-		// Minimum point size.
 			sizeMin: 15,
-
-		// Maximum point size.
 			sizeMax: 20
-
 	};
 
 	var $window = $(window);
@@ -24,12 +13,12 @@
 	$window.on('load', function() {
 
 		$(document).ready(function(){
-		    $.get("https://raw.githubusercontent.com/artkostm/test/master/README.md", 
-						function(data)
-						{
-							$("#container_text").html(data.replace(/(\r\n|\n|\r)/gm, "<br>"));
-						}
-					);
+			$('#container_text').load("theor.html");
+			$('#container_manager').load("manager.html");
+			$('#container_end').load("end.html");
+			$('#container_lib').load("lib.html");
+			$('#container_result').load("result.html");
+			$('#container_about').load("about.html");
 		}); 
 
 		skel
