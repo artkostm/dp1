@@ -14,6 +14,7 @@
 
 		$(document).ready(function(){
 			$('#container_text').load("theor.html");
+			$.getScript("https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js")
 			$('#container_result').load("result.html");
 			$.getScript("https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js")
 			$('#container_manager').load("manager.html");
