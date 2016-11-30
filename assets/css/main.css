@@ -11,9 +11,15 @@
 		font: inherit;
 		/*vertical-align: baseline;*/
 	}
+	
+	
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
+	}
+	
+	article header, #container_text, #container_result, #container_end, #container_lib, #container_manager, #container_about {
+		text-indent: 1.5em;
 	}
 
 	body {
